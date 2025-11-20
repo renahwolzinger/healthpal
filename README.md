@@ -1,73 +1,52 @@
-# React + TypeScript + Vite
+# Health Pal
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, privacy-focused health tracking application designed to help you monitor your daily activities, vitals, and lifestyle choices.
 
-Currently, two official plugins are available:
+## 🚀 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+[**View the Live App**](https://renahwolzinger.github.io/healthpal/)
 
-## React Compiler
+## ✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+*   **Activity Tracking**: Log various exercises like Running, Cycling, Yoga, and more.
+*   **Vital Monitoring**: Keep track of weight, blood pressure, heart rate, and blood sugar.
+*   **Lifestyle Logging**: Monitor sleep, water intake, meditation, and nutrition.
+*   **Visual Dashboard**: View your progress with interactive charts and summaries.
+*   **Privacy First**: All data is stored locally in your browser. No account required, and your data never leaves your device.
+*   **Responsive Design**: Works beautifully on both desktop and mobile devices.
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+*   **React 19**: The latest version of the popular UI library.
+*   **TypeScript**: For type-safe and robust code.
+*   **Vite**: Next-generation frontend tooling.
+*   **Recharts**: Composable charting library for React.
+*   **Lucide React**: Beautiful & consistent icons.
+*   **GitHub Pages**: Automated deployment via GitHub Actions.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🏃‍♂️ Running Locally
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+1.  **Clone the repository**
+    ```bash
+    git clone https://github.com/renahwolzinger/healthpal.git
+    cd healthpal
+    ```
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+2.  **Install dependencies**
+    ```bash
+    npm install
+    ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+3.  **Start the development server**
+    ```bash
+    npm run dev
+    ```
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+4.  **Build for production**
+    ```bash
+    npm run build
+    ```
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 📄 License
+
+Copyright © 2025 Eduvators. All rights reserved.
